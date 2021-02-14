@@ -1,7 +1,3 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main{
@@ -9,16 +5,21 @@ public class Main{
         Scanner sc = new Scanner(System.in);
 
         int N = sc.nextInt();
-        int X = sc.nextInt();
-        Integer A[] = new Integer[N];
+        int S = sc.nextInt();
+        int D = sc.nextInt();
 
-        for(int i = 0; i < N; i++){
-            A[i] = sc.nextInt();
-        }
+        for(int i = 1; i <= N; i++){
+            int x = sc.nextInt();
+            int y = sc.nextInt();
 
-        for(int i = 0; i < N; ++i){
-            if(A[i] == X) continue;
-            System.out.print(A[i] + " ");
+            if(x < S && y > D){
+                System.out.println("Yes");
+                break;
+            }
+            if(i == N){
+                System.out.println("No");
+                break;
+            }
         }
     }
 }
