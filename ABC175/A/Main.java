@@ -10,8 +10,8 @@ public class Main{
         }
         else if("SRR".equals(S) || "RRS".equals(S)){
             System.out.println("2");
-        }else if("SSS".equals(S)){
-            System.out.println("0");
+        }else if("RRR".equals(S)){
+            System.out.println("3");
         }else{
             System.out.println("1");
         }
