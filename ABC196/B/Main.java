@@ -1,13 +1,15 @@
 import java.util.Scanner;
-
 public class Main{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
-        int d = sc.nextInt();
+        String X = sc.nextLine();
+        int result = X.indexOf(".");
 
-        System.out.println(b-c);
+        if(result >= 0){
+            String ans = X.substring(0, result);
+            System.out.println(ans);
+        }else{
+            System.out.println(X);
+        }
     }
 }
